@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="time">0</h1>
+
+<button onclick="start()">Start</button>
+
+<script>
+let s=0;
+
+function start(){
+setInterval(()=>{
+time.innerText=++s;
+},1000);
+}
+</script>
+
+</body>
+</html>
