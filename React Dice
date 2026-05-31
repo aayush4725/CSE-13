@@ -1,0 +1,21 @@
+import { useState } from "react";
+
+export default function App() {
+  const [dice, setDice] = useState(1);
+
+  return (
+    <div>
+      <h1>{dice}</h1>
+
+      <button
+        onClick={() =>
+          setDice(
+            Math.floor(Math.random() * 6) + 1
+          )
+        }
+      >
+        Roll Dice
+      </button>
+    </div>
+  );
+}
