@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Type this:</h2>
+
+<p>Hello JavaScript World</p>
+
+<input id="input">
+
+<button onclick="check()">
+Check
+</button>
+
+<p id="result"></p>
+
+<script>
+let start=Date.now();
+
+function check(){
+
+let end=Date.now();
+
+let sec=(end-start)/1000;
+
+result.innerText=
+"Time: "+sec.toFixed(1)+" sec";
+}
+</script>
+
+</body>
+</html>
