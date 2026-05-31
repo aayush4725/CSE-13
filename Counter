@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="count">0</h1>
+<button onclick="count.innerText++">+</button>
+<button onclick="count.innerText--">-</button>
+</body>
+</html>
