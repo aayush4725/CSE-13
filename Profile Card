@@ -1,0 +1,22 @@
+export default function App() {
+  return (
+    <div
+      style={{
+        border: "1px solid gray",
+        width: "250px",
+        padding: "20px"
+      }}
+    >
+      <img
+        src="https://i.pravatar.cc/150"
+        alt=""
+      />
+
+      <h2>Rahul Kumar</h2>
+
+      <p>Frontend Developer</p>
+
+      <button>Follow</button>
+    </div>
+  );
+}
