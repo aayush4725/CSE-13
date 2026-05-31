@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea onkeyup="count()"
+id="text"></textarea>
+
+<p id="result">0</p>
+
+<script>
+function count(){
+result.innerText=
+text.value.length;
+}
+</script>
+
+</body>
+</html>
