@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculator</title>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-80">
+    <input
+      type="text"
+      id="display"
+      class="w-full border p-3 text-right text-2xl rounded mb-4"
+      readonly
+    >
+
+    <div class="grid grid-cols-4 gap-2">
+      <button onclick="append('7')" class="bg-gray-200 p-3 rounded">7</button>
+      <button onclick="append('8')" class="bg-gray-200 p-3 rounded">8</button>
+      <button onclick="append('9')" class="bg-gray-200 p-3 rounded">9</button>
+      <button onclick="append('/')" class="bg-orange-500 text-white p-3 rounded">÷</button>
+
+      <button onclick="append('4')" class="bg-gray-200 p-3 rounded">4</button>
+      <button onclick="append('5')" class="bg-gray-200 p-3 rounded">5</button>
+      <button onclick="append('6')" class="bg-gray-200 p-3 rounded">6</button>
+      <button onclick="append('*')" class="bg-orange-500 text-white p-3 rounded">×</button>
+
+      <button onclick="append('1')" class="bg-gray-200 p-3 rounded">1</button>
+      <button onclick="append('2')" class="bg-gray-200 p-3 rounded">2</button>
+      <button onclick="append('3')" class="bg-gray-200 p-3 rounded">3</button>
+      <button onclick="append('-')" class="bg-orange-500 text-white p-3 rounded">-</button>
+
+      <button onclick="append('0')" class="bg-gray-200 p-3 rounded">0</button>
+      <button onclick="append('.')" class="bg-gray-200 p-3 rounded">.</button>
+      <button onclick="calculate()" class="bg-green-500 text-white p-3 rounded">=</button>
+      <button onclick="append('+')" class="bg-orange-500 text-white p-3 rounded">+</button>
+
+      <button onclick="clearDisplay()" class="col-span-4 bg-red-500 text-white p-3 rounded">
+        Clear
+      </button>
+    </div>
+  </div>
+
+<script>
+function append(value){
+  document.getElementById("display").value += value;
+}
+
+function calculate(){
+  const display = document.getElementById("display");
+  display.value = eval(display.value);
+}
+
+function clearDisplay(){
+  document.getElementById("display").value = "";
+}
+</script>
+
+</body>
+</html>
