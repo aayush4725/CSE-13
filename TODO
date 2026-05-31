@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="task">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add(){
+list.innerHTML += `<li>${task.value}</li>`;
+task.value="";
+}
+</script>
+
+</body>
+</html>
