@@ -1,0 +1,34 @@
+export default function Dashboard() {
+  return (
+    <div className="min-h-screen bg-gray-100">
+
+      <nav className="bg-blue-600 text-white p-4">
+        Dashboard
+      </nav>
+
+      <div className="p-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div className="bg-white p-6 rounded shadow">
+          <h3 className="text-xl font-bold">Users</h3>
+          <p className="text-3xl">1,250</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h3 className="text-xl font-bold">Sales</h3>
+          <p className="text-3xl">$8,400</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h3 className="text-xl font-bold">Orders</h3>
+          <p className="text-3xl">320</p>
+        </div>
+
+        <div className="bg-white p-6 rounded shadow">
+          <h3 className="text-xl font-bold">Revenue</h3>
+          <p className="text-3xl">$24K</p>
+        </div>
+
+      </div>
+    </div>
+  );
+}
