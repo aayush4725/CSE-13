@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="birth" placeholder="Birth Year">
+
+<button onclick="age()">Find Age</button>
+
+<p id="result"></p>
+
+<script>
+function age(){
+result.innerText=
+2026-birth.value;
+}
+</script>
+
+</body>
+</html>
