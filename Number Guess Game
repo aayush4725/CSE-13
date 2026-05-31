@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="guess">
+
+<button onclick="check()">Check</button>
+
+<p id="msg"></p>
+
+<script>
+let number=5;
+
+function check(){
+msg.innerText=
+guess.value==number
+?"Correct":"Wrong";
+}
+</script>
+
+</body>
+</html>
