@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="time">25:00</h1>
+
+<button onclick="start()">
+Start
+</button>
+
+<script>
+let sec=1500;
+
+function start(){
+setInterval(()=>{
+sec--;
+
+let m=Math.floor(sec/60);
+let s=sec%60;
+
+time.innerText=
+`${m}:${s<10?'0':''}${s}`;
+},1000);
+}
+</script>
+
+</body>
+</html>
